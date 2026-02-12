@@ -1,0 +1,21 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: 'Arial';
+}
+
+#root{
+  padding: 0px;
+}
+
+.hide-scrollbar {
+  /* For Internet Explorer and Edge */
+  -ms-overflow-style: none;
+  /* For Firefox */
+  scrollbar-width: none;
+}
+
+/* For Chrome, Safari, and Opera */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
