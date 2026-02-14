@@ -6,9 +6,7 @@ export function MotoCard({ moto }: { moto: IMoto }) {
             <img className="motorcycle-img" src={moto.img1} />
                 <h3 className="motorcycle-title">{moto.nome}</h3>
                 <div className="motorcycle-card-actions">
-                    <a className="motorcycle-card-link" href={`/detalhes/${moto.nome}`}>Detalhes da moto</a>
-                    <a className="motorcycle-card-link2" href="">Planos de consórcio</a>
-                    <a className="motorcycle-card-link2" href="">Financiamento</a>
+                    <a className="motorcycle-card-link" href={`/detalhes/${moto.nome}`}>Mais Detalhes</a>                    
                 </div>
         </div>
     )

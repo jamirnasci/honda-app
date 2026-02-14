@@ -15,17 +15,19 @@ export function ConsorcioComponent({ moto }: { moto: IMoto }) {
                 const parcelasN = Number(item[1])
                 return (
                     <div className="consorcio-line">
-                        <input type="radio" name="parcelas" id="" value={item[1]} onInput={() => {
-                            setParcelas(item[0])
-                            setValorParcelas(parcelasN)
-                        }} />
-                        <strong style={{ color: '#cc0000' }}>{item[0]}</strong>
-                        <span>R$ {parcelasN.toFixed(2)}</span>
+                        <div>
+                            <input type="radio" name="parcelas" className="parcela-radio" value={item[1]} onInput={() => {
+                                setParcelas(item[0])
+                                setValorParcelas(parcelasN)
+                            }} />
+                            <strong style={{ color: '#cc0000' }}>{item[0]}</strong>
+                        </div>
+                        <span className="price">R$ {parcelasN.toFixed(2)}</span>
                     </div>
                 )
             })}
             <button className="btn-cta btn-whatsapp" onClick={() => {
-                if(valorParcelas <= 0 || parcelas.length <= 0){
+                if (valorParcelas <= 0 || parcelas.length <= 0) {
                     alert('Selecione algum plano')
                     return
                 }

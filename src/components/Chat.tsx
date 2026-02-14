@@ -3,6 +3,7 @@ import './Chat.css';
 import type { IMoto } from '../types/Moto';
 import { IoSend } from 'react-icons/io5';
 import { IoMdClose } from 'react-icons/io';
+import { redirectWhatsapp } from '../utils/redirectWhatsapp';
 
 interface Message {
   id: number;
@@ -23,10 +24,10 @@ export function Chat({ motoSelecionada, toogleModal }: ChatProps) {
   const [nomeCliente, setNomeCliente] = useState<string>('');
   const [motos, setMotos] = useState<IMoto[]>([])
   const metodosPagamento = [
-    '1.  À VISTA',
-    '2.  FINANCIAMENTO',
-    '3.  CONSÓRCIO',
-    '4.  CARTÃO DE CRÉDITO',
+    'À VISTA',
+    'FINANCIAMENTO',
+    'CONSÓRCIO',
+    'CARTÃO DE CRÉDITO',
   ]
   const [chatOption, setChatOption] = useState<string>('nome')
   const [messages, setMessages] = useState<Message[]>([
@@ -67,11 +68,6 @@ export function Chat({ motoSelecionada, toogleModal }: ChatProps) {
     setMessages((prev) => [...prev, newMessage]);
     setTimeout(() => {
 
-      if(motoSelecionada){
-
-      }
-
-
       if (chatOption == 'nome') {
         setNomeCliente(input)
         const motosList = motos.map((item, i) => {
@@ -85,6 +81,14 @@ export function Chat({ motoSelecionada, toogleModal }: ChatProps) {
         setChatOption('moto')
       }
       if (chatOption == 'moto') {
+        if (!/^\d*$/.test(input) || Number(input) > motos.length) {
+          setMessages((prev) => [...prev, {
+            id: Date.now() + 1,
+            text: `Por favor, escolha o número ao lado da sua Honda de interesse`,
+            sender: 'bot'
+          }])
+          return
+        }
         const moto: IMoto = motos[Number(input) - 1]
         setMotoInteresse(moto)
         setMessages((prev) => [...prev, {
@@ -92,8 +96,8 @@ export function Chat({ motoSelecionada, toogleModal }: ChatProps) {
           text: `Muito bom ${nomeCliente}, a ${moto.nome} tem sistema de partida ${moto.sistemaDePartida}, potência de ${moto.potenciaMaxima} e tanque com capacidade de ${moto.capacidade}`,
           sender: 'bot'
         }])
-        const pagamentoLista = metodosPagamento.map((item) => {
-          return `\n${item}`
+        const pagamentoLista = metodosPagamento.map((item, i) => {
+          return `\n${i + 1}. ${item}`
         })
         setMessages((prev) => [...prev, {
           id: Date.now() + 1,
@@ -149,7 +153,10 @@ export function Chat({ motoSelecionada, toogleModal }: ChatProps) {
           {chatOption == 'whatsapp' ?
             <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'left' }}>
               <img src="img/profile.jpg" alt="" height={35} width={35} style={{ borderRadius: '50%', margin: 5 }} />
-              <button className='whatsapp-btn'>Fale comigo no WhatsApp</button>
+              <button className='whatsapp-btn' onClick={()=>{
+                const msg = `Fala jamir, estou interessado na ${motoInteresse?.nome} na modalidade ${pagamentoInteresse}, poderia me fornecer mais informações sobre como posso adquirir minha Honda ?`
+                redirectWhatsapp(msg)
+              }}>Fale comigo no WhatsApp</button>
             </div> :
             null}
         </div>

@@ -86,7 +86,7 @@ export function DetalhesMoto() {
                     }}> <FaWhatsapp size={25} /> WhatsApp</button>
                 </section>
             </main>
-            {isChatModalVisible ? <Chat toogleModal={toogleModal}/> : null}
+            {isChatModalVisible ? <Chat toogleModal={toogleModal} motoSelecionada={moto}/> : null}
             {isConsorcioModalVisible ? <Modal Component={<ConsorcioComponent moto={moto}/>} title='Planos Consórcio' toogleModal={toogleConsorcioModal} /> : null}
             {isFinanciamentoModalVisible ? <Modal Component={<FinanciamentoForm moto={moto}/>} title='Financiamento' toogleModal={toogleFinanciamentoModal} /> : null}
         </div>

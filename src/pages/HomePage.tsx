@@ -42,7 +42,9 @@ export function HomePage() {
                         <p className="profile-txt">Conectando você à sua próxima moto com as melhores condições!</p>
                     </div>
                     <div className="links-box">
-                        <button className="profile-link">
+                        <button className="profile-link" onClick={()=>{
+                            location.href = "https://www.instagram.com/jamir.honda/"
+                        }}>
                             <FaInstagram size={25} />
                             Instagram
                         </button>

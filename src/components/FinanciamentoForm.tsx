@@ -42,11 +42,11 @@ export function FinanciamentoForm({ moto }: { moto: IMoto }) {
                 return
             }
         }
-
+        const [year, month, day] = formData.dataNascimento.split('-')
         const msg = `Olá, meu nome é ${formData.nome}, tenho interesse no financiamento da ${moto.nome}, segue abaixo meus dados para a APROVAÇÃO
     Nome: ${formData.nome},
     CPF: ${formData.cpf},
-    Data Nascimento: ${formData.dataNascimento},
+    Data Nascimento: ${day}/${month}/${year},
     Telefone: ${formData.telefone},
     Valor Entrada: ${formData.valorEntrada},
     Habilitação: ${formData.habilitacao}
@@ -56,6 +56,9 @@ export function FinanciamentoForm({ moto }: { moto: IMoto }) {
 
     return (
         <div className="form-container">
+            <i style={{display: 'inline-block', color: 'gray', paddingTop: '5px', paddingBottom: '10px'}}>
+                Preencha o formulário abaixo para que o vendedor possa trazer pra você as melhores cotações do mercado.
+            </i>
             <form className="form" onSubmit={handleSubmit}>
                 <div className="form-group">
                     <label>Nome</label>
@@ -76,6 +79,7 @@ export function FinanciamentoForm({ moto }: { moto: IMoto }) {
                         inputMode="numeric"
                         pattern="[0-9]*"
                         onChange={handleChange}
+                        maxLength={11}
                     />
                 </div>
 
@@ -100,7 +104,7 @@ export function FinanciamentoForm({ moto }: { moto: IMoto }) {
                 </div>
 
                 <div className="form-group">
-                    <label>Valor de Entrada</label>
+                    <label>Valor de Entrada (R$)</label>
                     <input
                         type="number"
                         name="valorEntrada"

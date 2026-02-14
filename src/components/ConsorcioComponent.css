@@ -1,17 +1,20 @@
 .consorcio-container{
+    display: flex;
+    flex-direction: column;
     min-width: 350px;
 }
 
 .consorcio-line{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     padding: 10px;
     border-bottom: solid 1px gainsboro;
     background-color: whitesmoke;
 }
 
-.consorcio-line > input[type="radio"]{
+.parcela-radio{
+    margin-right: 10px;
     accent-color: blue;
     height: 15px;
     width: 15px;
@@ -19,4 +22,8 @@
 
 .consorcio-line > *{
     margin: 5px;
+}
+
+.price{
+    color: #3b3b3b;
 }

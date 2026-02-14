@@ -124,6 +124,7 @@
 	min-width: 200px;
 	text-align: center;
 	font-weight: bold;
+	font-size: 1.2em;
 }
 
 .motorcycle-card-link2 {
@@ -142,6 +143,6 @@
 
 @media screen and (max-width: 768px) {
 	.motorcycle-card {
-		width: 50vw;
+		width: 70vw;
 	}
 }
