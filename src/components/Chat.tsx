@@ -38,6 +38,8 @@ export function Chat({ motoSelecionada, toogleModal }: ChatProps) {
     },
   ]);
 
+  console.log(motoSelecionada)
+
   const scrollRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
 
