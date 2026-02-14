@@ -2,6 +2,7 @@ import { useState, useRef, useEffect } from 'react';
 import './Chat.css';
 import type { IMoto } from '../types/Moto';
 import { IoSend } from 'react-icons/io5';
+import { IoMdClose } from 'react-icons/io';
 
 interface Message {
   id: number;
@@ -10,11 +11,11 @@ interface Message {
 }
 
 interface ChatProps {
-  motoNome?: string;
+  motoSelecionada?: IMoto;
   toogleModal: Function
 }
 
-export function Chat({ motoNome, toogleModal }: ChatProps) {
+export function Chat({ motoSelecionada, toogleModal }: ChatProps) {
 
   const [input, setInput] = useState<string>('');
   const [motoInteresse, setMotoInteresse] = useState<IMoto>();
@@ -65,6 +66,10 @@ export function Chat({ motoNome, toogleModal }: ChatProps) {
 
     setMessages((prev) => [...prev, newMessage]);
     setTimeout(() => {
+
+      if(motoSelecionada){
+
+      }
 
 
       if (chatOption == 'nome') {
@@ -127,7 +132,7 @@ export function Chat({ motoNome, toogleModal }: ChatProps) {
             <button className='close-btn' onClick={() => {
               toogleModal()
             }}>
-              <i className="fa-solid fa-xmark"></i>
+              <IoMdClose size={25} />
             </button>
           </div>
         </div>

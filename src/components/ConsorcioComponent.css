@@ -1,0 +1,22 @@
+.consorcio-container{
+    min-width: 350px;
+}
+
+.consorcio-line{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-bottom: solid 1px gainsboro;
+    background-color: whitesmoke;
+}
+
+.consorcio-line > input[type="radio"]{
+    accent-color: blue;
+    height: 15px;
+    width: 15px;
+}
+
+.consorcio-line > *{
+    margin: 5px;
+}

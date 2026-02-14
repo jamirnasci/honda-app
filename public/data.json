@@ -13,7 +13,14 @@
 		"combustivel": "Gasolina",
 		"capacidade": "4,2 Litros",
 		"oleoDoMotor": "1 Litro",
-		"img1": "img/motorcycles/pop110i.png"
+		"img1": "img/motorcycles/pop110i.png",
+		"consorcio":{
+			"x24": 659.81,
+			"x36": 448.60,
+			"x48": 340.51,
+			"x60": 276.44,
+			"x80": 213.44
+		}
 	},
 	{
 		"nome": "BIZ 125 ES",
@@ -29,7 +36,14 @@
 		"combustivel": "Gasolina",
 		"capacidade": "3,7 Litros",
 		"oleoDoMotor": "1 Litro",
-		"img1": "img/motorcycles/biz125es.png"
+		"img1": "img/motorcycles/biz125es.png",
+		"consorcio":{
+			"x24": 832.69,
+			"x36": 566.13,
+			"x48": 429.72,
+			"x60": 348.88,
+			"x80": 269.36
+		}
 	},
 	{
 		"nome": "ELITE 125",
@@ -45,7 +59,14 @@
 		"combustivel": "Gasolina",
 		"capacidade": "5,5 Litros",
 		"oleoDoMotor": "0,9 Litro",
-		"img1": "img/motorcycles/elite125.png"
+		"img1": "img/motorcycles/elite125.png",
+		"consorcio":{
+			"x24": 863.67,
+			"x36": 587.20,
+			"x48": 445.71,
+			"x60": 361.86,
+			"x80": 333.37
+		}
 	},
 	{
 		"nome": "BIZ 125 EX",
@@ -61,7 +82,14 @@
 		"combustivel": "Gasolina",
 		"capacidade": "3,7 Litros",
 		"oleoDoMotor": "1 Litro",
-		"img1": "img/motorcycles/biz125ex.png"
+		"img1": "img/motorcycles/biz125ex.png",
+		"consorcio":{
+			"x24": 1030.56,
+			"x36": 700.66,
+			"x48": 531.84,
+			"x60": 431.78,
+			"x80": 333.37
+		}
 	},
 	{
 		"nome": "CG 160 START",
@@ -77,7 +105,14 @@
 		"combustivel": "Gasolina",
 		"capacidade": "15,5 Litros",
 		"oleoDoMotor": "1,1 Litro",
-		"img1": "img/motorcycles/cg160start.png"
+		"img1": "img/motorcycles/cg160start.png",
+		"consorcio":{
+			"x24": 1066.86,
+			"x36": 725.34,
+			"x48": 550.57,
+			"x60": 446.99,
+			"x80": 345.11
+		}
 	},
 	{
 		"nome": "PCX CBS",
@@ -93,7 +128,14 @@
 		"combustivel": "Gasolina",
 		"capacidade": "8,1 Litros",
 		"oleoDoMotor": "1,1 Litro",
-		"img1": "img/motorcycles/pcxcbs.png"
+		"img1": "img/motorcycles/pcxcbs.png",
+		"consorcio":{
+			"x24": 1142.55,
+			"x36": 776.80,
+			"x48": 589.63,
+			"x60": 478.70,
+			"x80": 369.59
+		}
 	},
 	{
 		"nome": "CG 160 FAN",
@@ -109,7 +151,14 @@
 		"combustivel": "Gasolina",
 		"capacidade": "15,5 Litros",
 		"oleoDoMotor": "1,1 Litro",
-		"img1": "img/motorcycles/cg160fan.png"
+		"img1": "img/motorcycles/cg160fan.png",
+		"consorcio":{
+			"x24": 1164.28,
+			"x36": 791.58,
+			"x48": 600.84,
+			"x60": 487.80,
+			"x80": 376.62
+		}
 	},
 	{
 		"nome": "CG 160 TITAN",
@@ -125,7 +174,14 @@
 		"combustivel": "Gasolina",
 		"capacidade": "15,5 Litros",
 		"oleoDoMotor": "1,1 Litro",
-		"img1": "img/motorcycles/cg160titan.png"
+		"img1": "img/motorcycles/cg160titan.png",
+		"consorcio":{
+			"x24": 1237.64,
+			"x36": 841.45,
+			"x48": 638.70,
+			"x60": 518.54,
+			"x80": 400.35
+		}
 	},
 	{
 		"nome": "PCX ABS",
@@ -141,7 +197,14 @@
 		"combustivel": "Gasolina",
 		"capacidade": "8,1 Litros",
 		"oleoDoMotor": "1,1 Litro",
-		"img1": "img/motorcycles/pcxabs.png"
+		"img1": "img/motorcycles/pcxabs.png",
+		"consorcio":{
+			"x24": 1253.01,
+			"x36": 851.90,
+			"x48": 646.64,
+			"x60": 524.98,
+			"x80": 405.32
+		}
 	},
 	{
 		"nome": "NXR 160 BROS CBS",
@@ -157,7 +220,14 @@
 		"combustivel": "Gasolina",
 		"capacidade": "13,8 Litros",
 		"oleoDoMotor": "1,1 Litro",
-		"img1": "img/motorcycles/nxr160broscbs.png"
+		"img1": "img/motorcycles/nxr160broscbs.png",
+		"consorcio":{
+			"x24": 1335.61,
+			"x36": 908.06,
+			"x48": 689.26,
+			"x60": 559.59,
+			"x80": 432.04
+		}
 	},
 	{
 		"nome": "NXR 160 BROS ABS",
@@ -173,7 +243,14 @@
 		"combustivel": "Gasolina",
 		"capacidade": "13,8 Litros",
 		"oleoDoMotor": "1,1 Litro",
-		"img1": "img/motorcycles/nxr160brosabs.png"
+		"img1": "img/motorcycles/nxr160brosabs.png",
+		"consorcio":{
+			"x24": 1393.22,
+			"x36": 947.23,
+			"x48": 718.99,
+			"x60": 583.73,
+			"x80": 450.68
+		}
 	},
 	{
 		"nome": "CRF 300F",
@@ -189,7 +266,14 @@
 		"combustivel": "Gasolina",
 		"capacidade": "12,8 Litros",
 		"oleoDoMotor": "1,8 Litro",
-		"img1": "img/motorcycles/crf300f.png"
+		"img1": "img/motorcycles/crf300f.png",
+		"consorcio":{
+			"x24": 1337.36,
+			"x36": 909.25,
+			"x48": 690.16,
+			"x60": 560.32,
+			"x80": 432.61
+		}
 	},
 	{
 		"nome": "XRE 190",
@@ -205,7 +289,14 @@
 		"combustivel": "Gasolina",
 		"capacidade": "14,0 Litros",
 		"oleoDoMotor": "1,2 Litro",
-		"img1": "img/motorcycles/xre190.png"
+		"img1": "img/motorcycles/xre190.png",
+		"consorcio":{
+			"x24": 1426.31,
+			"x36": 969.72,
+			"x48": 736.07,
+			"x60": 597.59,
+			"x80": 461.38
+		}
 	},
 	{
 		"nome": "CB 300F TWISTER CBS",
@@ -221,7 +312,14 @@
 		"combustivel": "Gasolina",
 		"capacidade": "14,0 Litros",
 		"oleoDoMotor": "1,8 Litro",
-		"img1": "img/motorcycles/cb300ftwistercbs.png"
+		"img1": "img/motorcycles/cb300ftwistercbs.png",
+		"consorcio":{
+			"x24": 1490.13,
+			"x36": 1013.12,
+			"x48": 769,
+			"x60": 624.33,
+			"x80": 482.03
+		}
 	},
 	{
 		"nome": "HONDA ADV",
@@ -237,7 +335,14 @@
 		"combustivel": "Gasolina",
 		"capacidade": "14,4 Litros",
 		"oleoDoMotor": "1,2 Litro",
-		"img1": "img/motorcycles/hondaadv.png"
+		"img1": "img/motorcycles/hondaadv.png",
+		"consorcio":{
+			"x24": 1547.03,
+			"x36": 1051.80,
+			"x48": 798.37,
+			"x60": 648.17,
+			"x80": 500.43
+		}
 	},
 	{
 		"nome": "CB 300F TWISTER ABS",
@@ -253,7 +358,14 @@
 		"combustivel": "Gasolina",
 		"capacidade": "14,0 Litros",
 		"oleoDoMotor": "1,8 Litro",
-		"img1": "img/motorcycles/cb300ftwisterabs.png"
+		"img1": "img/motorcycles/cb300ftwisterabs.png",
+		"consorcio":{
+			"x24": 1548.15,
+			"x36": 1052.56,
+			"x48": 798.95,
+			"x60": 648.64,
+			"x80": 500.80
+		}
 	},
 	{
 		"nome": "XR 300L TORNADO",
@@ -269,7 +381,14 @@
 		"combustivel": "Gasolina",
 		"capacidade": "15,4 Litros",
 		"oleoDoMotor": "1,8 Litro",
-		"img1": "img/motorcycles/xr300ltornado.png"
+		"img1": "img/motorcycles/xr300ltornado.png",
+		"consorcio":{
+			"x24": 1785.43,
+			"x36": 1213.89,
+			"x48": 921.49,
+			"x60": 748.05,
+			"x80": 577.55
+		}
 	},
 	{
 		"nome": "SAHARA 300",
@@ -285,7 +404,14 @@
 		"combustivel": "Gasolina",
 		"capacidade": "18,0 Litros",
 		"oleoDoMotor": "1,8 Litro",
-		"img1": "img/motorcycles/sahara300.png"
+		"img1": "img/motorcycles/sahara300.png",
+		"consorcio":{
+			"x24": 1868.47,
+			"x36": 1270.34,
+			"x48": 996.59,
+			"x60": 809.10,
+			"x80": 624.68
+		}
 	},
 	{
 		"nome": "SAHARA 300 ADV",
@@ -301,6 +427,13 @@
 		"combustivel": "Gasolina",
 		"capacidade": "18,0 Litros",
 		"oleoDoMotor": "1,8 Litro",
-		"img1": "img/motorcycles/sahara300adv.png"
+		"img1": "img/motorcycles/sahara300adv.png",
+		"consorcio":{
+			"x24": 1931.14,
+			"x36": 1312.95,
+			"x48": 996.59,
+			"x60": 809.10,
+			"x80": 624.68
+		}
 	}
 ]

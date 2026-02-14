@@ -1,3 +1,5 @@
+import type { IConsorcio } from "./Consorcio";
+
 export interface IMoto {
   nome: string;
   tipo: string;
@@ -13,4 +15,5 @@ export interface IMoto {
   capacidade: string;
   oleoDoMotor: string;
   img1: string;
+  consorcio: IConsorcio
 }

@@ -8,14 +8,27 @@ import { FaWhatsapp } from 'react-icons/fa';
 import { TbMoneybag } from 'react-icons/tb';
 import { BiSolidBank } from 'react-icons/bi';
 import { IoMdArrowRoundBack } from 'react-icons/io';
+import { redirectWhatsapp } from '../utils/redirectWhatsapp';
+import { Modal } from '../components/Modal';
+import { ConsorcioComponent } from '../components/ConsorcioComponent';
+import { FinanciamentoForm } from '../components/FinanciamentoForm';
 
 export function DetalhesMoto() {
     const { nome } = useParams<{ nome: string }>();
     const navigate = useNavigate();
     const [moto, setMoto] = useState<IMoto | null>(null);
-    const [isModalVisible, setModalVisible] = useState<boolean>(false)
+    const [isConsorcioModalVisible, setConsorcioModalVisible] = useState<boolean>(false)
+    const [isFinanciamentoModalVisible, setFinanciamentoModalVisible] = useState<boolean>(false)
+    const [isChatModalVisible, setChatModalVisible] = useState<boolean>(false)
+
     const toogleModal = () => {
-        setModalVisible(!isModalVisible)
+        setChatModalVisible(!isChatModalVisible)
+    }
+    const toogleConsorcioModal = () => {
+        setConsorcioModalVisible(!isConsorcioModalVisible)
+    }
+    const toogleFinanciamentoModal = () => {
+        setFinanciamentoModalVisible(!isFinanciamentoModalVisible)
     }
 
     useEffect(() => {
@@ -56,12 +69,26 @@ export function DetalhesMoto() {
                         <div className="spec-row"><span>Tanque</span><strong>{moto.capacidade}</strong></div>
                     </div>
 
-                    <button className="btn-cta"> <BiSolidBank size={25} /> Financiamento</button>
-                    <button className="btn-cta"> <TbMoneybag size={25} /> Consórcio</button>
-                    <button className="btn-cta btn-whatsapp"> <FaWhatsapp size={25} /> WhatsApp</button>
+                    <button className="btn-cta" onClick={()=>{
+                        toogleFinanciamentoModal()
+                    }}>
+                        <BiSolidBank size={25} /> 
+                        Financiamento
+                    </button>
+                    <button className="btn-cta" onClick={()=>{
+                        toogleConsorcioModal()
+                    }}>
+                        <TbMoneybag size={25}/> 
+                    Consórcio</button>
+                    <button className="btn-cta btn-whatsapp" onClick={() => {
+                        const msg = `Olá Jamir, tenho interesse na ${moto.nome}, poderia me fornecer mais informações sobre o modelo e as modalidades de aquisição ?`
+                        redirectWhatsapp(msg)
+                    }}> <FaWhatsapp size={25} /> WhatsApp</button>
                 </section>
             </main>
-            {isModalVisible ?<Chat toogleModal={toogleModal}/> : null}
+            {isChatModalVisible ? <Chat toogleModal={toogleModal}/> : null}
+            {isConsorcioModalVisible ? <Modal Component={<ConsorcioComponent moto={moto}/>} title='Planos Consórcio' toogleModal={toogleConsorcioModal} /> : null}
+            {isFinanciamentoModalVisible ? <Modal Component={<FinanciamentoForm moto={moto}/>} title='Financiamento' toogleModal={toogleFinanciamentoModal} /> : null}
         </div>
     );
 }
