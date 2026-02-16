@@ -83,7 +83,7 @@ export function Chat({ motoSelecionada, toogleModal }: ChatProps) {
         setChatOption('moto')
       }
       if (chatOption == 'moto') {
-        if (!/^\d*$/.test(input) || Number(input) > motos.length) {
+        if (!/^\d*$/.test(input) || Number(input) > motos.length || Number(input) <= 0) {
           setMessages((prev) => [...prev, {
             id: Date.now() + 1,
             text: `Por favor, escolha o número ao lado da sua Honda de interesse`,
@@ -109,6 +109,14 @@ export function Chat({ motoSelecionada, toogleModal }: ChatProps) {
         setChatOption('pagamento')
       }
       if (chatOption == 'pagamento') {
+        if (!/^\d*$/.test(input) || Number(input) > metodosPagamento.length || Number(input) <= 0) {
+          setMessages((prev) => [...prev, {
+            id: Date.now() + 1,
+            text: `Por favor, escolha uma opção válida entre as modalidades de pagamento`,
+            sender: 'bot'
+          }])
+          return
+        }
         const pagamentoMetodo = Number(input) - 1
         setMessages((prev) => [...prev, {
           id: Date.now() + 1,
@@ -155,7 +163,7 @@ export function Chat({ motoSelecionada, toogleModal }: ChatProps) {
           {chatOption == 'whatsapp' ?
             <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'left' }}>
               <img src="img/profile.jpg" alt="" height={35} width={35} style={{ borderRadius: '50%', margin: 5 }} />
-              <button className='whatsapp-btn' onClick={()=>{
+              <button className='whatsapp-btn' onClick={() => {
                 const msg = `Fala jamir, estou interessado na ${motoInteresse?.nome} na modalidade ${pagamentoInteresse}, poderia me fornecer mais informações sobre como posso adquirir minha Honda ?`
                 redirectWhatsapp(msg)
               }}>Fale comigo no WhatsApp</button>
