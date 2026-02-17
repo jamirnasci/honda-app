@@ -1,7 +1,7 @@
 import { useState, type ChangeEvent, type FormEvent } from "react";
 import "./FinanciamentoForm.css";
-import { redirectWhatsapp } from "../utils/redirectWhatsapp";
-import type { IMoto } from "../types/Moto";
+import { redirectWhatsapp } from "../../utils/redirectWhatsapp";
+import type { IMoto } from "../../types/Moto";
 
 interface FormData {
     valorEntrada: string;
@@ -56,7 +56,7 @@ export function FinanciamentoForm({ moto }: { moto: IMoto }) {
 
     return (
         <div className="form-container">
-            <i style={{display: 'inline-block', color: 'gray', paddingTop: '5px', paddingBottom: '10px'}}>
+            <i style={{ display: 'inline-block', color: 'gray', paddingTop: '5px', paddingBottom: '10px' }}>
                 Preencha o formulário abaixo para que o vendedor possa trazer pra você as melhores cotações do mercado.
             </i>
             <form className="form" onSubmit={handleSubmit}>

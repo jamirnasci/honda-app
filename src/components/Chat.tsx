@@ -89,6 +89,7 @@ export function Chat({ motoSelecionada, toogleModal }: ChatProps) {
             text: `Por favor, escolha o número ao lado da sua Honda de interesse`,
             sender: 'bot'
           }])
+          setInput('');
           return
         }
         const moto: IMoto = motos[Number(input) - 1]
@@ -115,6 +116,7 @@ export function Chat({ motoSelecionada, toogleModal }: ChatProps) {
             text: `Por favor, escolha uma opção válida entre as modalidades de pagamento`,
             sender: 'bot'
           }])
+          setInput('');
           return
         }
         const pagamentoMetodo = Number(input) - 1

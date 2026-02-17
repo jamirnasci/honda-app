@@ -3,7 +3,8 @@ import type { IMoto } from "../types/Moto"
 import { MotoCard } from "../components/MotoCard"
 import { Chat } from "../components/Chat"
 import { IoChatbubbleEllipsesOutline } from "react-icons/io5"
-import { FaInstagram } from "react-icons/fa"
+import { FaInstagram, FaWpforms } from "react-icons/fa"
+import { HiOutlineClipboardDocumentList } from "react-icons/hi2"
 
 export function HomePage() {
     const [motoList, setMotoList] = useState<IMoto[]>([])
@@ -41,18 +42,30 @@ export function HomePage() {
                         </div>
                         <p className="profile-txt">Conectando você à sua próxima moto com as melhores condições!</p>
                     </div>
-                    <div className="links-box">
-                        <button className="profile-link" onClick={()=>{
+                    <div className="links-box d-flex justify-content-left align-items-start flex-wrap">
+                        <button className="profile-link" onClick={() => {
                             location.href = "https://www.instagram.com/jamir.honda/"
                         }}>
                             <FaInstagram size={25} />
                             Instagram
                         </button>
-                        <button className="profile-link" style={{ marginLeft: '10px' }} onClick={() => {
+                        <button className="profile-link" onClick={() => {
                             toogleModal()
                         }}>
                             <IoChatbubbleEllipsesOutline size={25} />
                             Fale Comigo
+                        </button>
+                        <button className="profile-link" onClick={() => {
+                            location.href = "/fichacdc"
+                        }}>
+                            <FaWpforms size={25} />
+                            Ficha CDC
+                        </button>
+                        <button className="profile-link" onClick={() => {
+                            location.href = "/fichacnh"
+                        }}>
+                            <HiOutlineClipboardDocumentList size={25} />
+                            Ficha CNH
                         </button>
                     </div>
                 </div>

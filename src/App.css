@@ -57,10 +57,6 @@
 	font-weight: 500;
 }
 
-.links-box{
-	display: flex;
-}
-
 .profile-link {
 	display: flex;
 	align-items: center;
@@ -71,9 +67,10 @@
 	font-weight: bold;
 	border-radius: 25px;
 	text-decoration: none;
-	min-width: 100px;
+	max-width: 200px;
 	border: none;
 	cursor: pointer;
+	margin: 5px;
 }
 
 .profile-link>* {

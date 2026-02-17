@@ -11,7 +11,7 @@ import { IoMdArrowRoundBack } from 'react-icons/io';
 import { redirectWhatsapp } from '../utils/redirectWhatsapp';
 import { Modal } from '../components/Modal';
 import { ConsorcioComponent } from '../components/ConsorcioComponent';
-import { FinanciamentoForm } from '../components/FinanciamentoForm';
+import { FinanciamentoForm } from '../components/forms/FinanciamentoForm';
 
 export function DetalhesMoto() {
     const { nome } = useParams<{ nome: string }>();
@@ -46,9 +46,9 @@ export function DetalhesMoto() {
 
     return (
         <div className="details-wrapper">
-            <header className="details-header">
+            <header className="details-header d-flex justify-content-left align-items-center p-2">
                 <button onClick={() => navigate(-1)} className="btn-back-icon"><IoMdArrowRoundBack size={25} /></button>
-                <h1>{moto.nome}</h1>
+                <h1 className='m-0 ms-2'>{moto.nome}</h1>
             </header>
 
             <main className="details-container">
