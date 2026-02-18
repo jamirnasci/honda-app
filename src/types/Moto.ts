@@ -2,6 +2,7 @@ import type { IConsorcio } from "./Consorcio";
 
 export interface IMoto {
   nome: string;
+  preco: number;
   tipo: string;
   cilindrada: string;
   potenciaMaxima: string;

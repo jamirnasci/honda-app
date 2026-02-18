@@ -1,6 +1,7 @@
 [
 	{
 		"nome": "POP 110i ES",
+		"preco": 12838,
 		"tipo": "OHC, Monocilíndrico, 4 tempos, arrefecimento a ar",
 		"cilindrada": "109,5 cc",
 		"potenciaMaxima": "8,43 cv a 7.250 rpm",
@@ -24,6 +25,7 @@
 	},
 	{
 		"nome": "BIZ 125 ES",
+		"preco": 14864,
 		"tipo": "OHC, Monocilíndrico, 4 tempos, arrefecimento a ar",
 		"cilindrada": "124,9 cc",
 		"potenciaMaxima": "9,32 cv a 7.500 rpm",
@@ -47,6 +49,7 @@
 	},
 	{
 		"nome": "ELITE 125",
+		"preco": 15417,
 		"tipo": "OHC, Monocilíndrico, 4 tempos, arrefecimento a ar",
 		"cilindrada": "124,9 cc",
 		"potenciaMaxima": "9,32 cv a 7.500 rpm",
@@ -70,6 +73,7 @@
 	},
 	{
 		"nome": "BIZ 125 EX",
+		"preco": 18396,
 		"tipo": "OHC, Monocilíndrico, 4 tempos, arrefecimento a ar",
 		"cilindrada": "124,9 cc",
 		"potenciaMaxima": "9,32 cv a 7.500 rpm",
@@ -93,6 +97,7 @@
 	},
 	{
 		"nome": "CG 160 START",
+		"preco": 19044,
 		"tipo": "OHC, Monocilíndrico, 4 tempos, arrefecimento a ar",
 		"cilindrada": "162,7 cc",
 		"potenciaMaxima": "14,9 cv a 8.000 rpm",
@@ -116,6 +121,7 @@
 	},
 	{
 		"nome": "PCX CBS",
+		"preco": 20584,
 		"tipo": "OHC, Monocilíndrico, 4 tempos, arrefecimento a líquido",
 		"cilindrada": "156,9 cc",
 		"potenciaMaxima": "15,2 cv a 8.500 rpm",
@@ -139,6 +145,7 @@
 	},
 	{
 		"nome": "CG 160 FAN",
+		"preco": 20783,
 		"tipo": "OHC, Monocilíndrico, 4 tempos, arrefecimento a ar",
 		"cilindrada": "162,7 cc",
 		"potenciaMaxima": "14,9 cv a 8.000 rpm",
@@ -162,6 +169,7 @@
 	},
 	{
 		"nome": "CG 160 TITAN",
+		"preco": 22297,
 		"tipo": "OHC, Monocilíndrico, 4 tempos, arrefecimento a ar",
 		"cilindrada": "162,7 cc",
 		"potenciaMaxima": "14,9 cv a 8.000 rpm",
@@ -185,6 +193,7 @@
 	},
 	{
 		"nome": "PCX ABS",
+		"preco": 22574,
 		"tipo": "OHC, Monocilíndrico, 4 tempos, arrefecimento a líquido",
 		"cilindrada": "156,9 cc",
 		"potenciaMaxima": "15,2 cv a 8.500 rpm",
@@ -208,6 +217,7 @@
 	},
 	{
 		"nome": "NXR 160 BROS CBS",
+		"preco": 24062,
 		"tipo": "OHC, Monocilíndrico, 4 tempos, arrefecimento a ar",
 		"cilindrada": "162,7 cc",
 		"potenciaMaxima": "14,93 cv a 8.000 rpm",
@@ -231,6 +241,7 @@
 	},
 	{
 		"nome": "NXR 160 BROS ABS",
+		"preco": 25100,
 		"tipo": "OHC, Monocilíndrico, 4 tempos, arrefecimento a ar",
 		"cilindrada": "162,7 cc",
 		"potenciaMaxima": "14,93 cv a 8.000 rpm",
@@ -254,6 +265,7 @@
 	},
 	{
 		"nome": "CRF 300F",
+		"preco": 26021,
 		"tipo": "OHC, Monocilíndrico, 4 tempos, arrefecimento a líquido",
 		"cilindrada": "286,4 cc",
 		"potenciaMaxima": "26,8 cv a 8.500 rpm",
@@ -277,6 +289,7 @@
 	},
 	{
 		"nome": "XRE 190",
+		"preco": 26058,
 		"tipo": "OHC, Monocilíndrico, 4 tempos, arrefecimento a ar",
 		"cilindrada": "184,4 cc",
 		"potenciaMaxima": "16,9 cv a 8.500 rpm",
@@ -300,6 +313,7 @@
 	},
 	{
 		"nome": "CB 300F TWISTER CBS",
+		"preco": 27224,
 		"tipo": "DOHC, Monocilíndrico, 4 tempos, arrefecimento a líquido",
 		"cilindrada": "291,6 cc",
 		"potenciaMaxima": "29,8 cv a 8.000 rpm",
@@ -323,6 +337,7 @@
 	},
 	{
 		"nome": "HONDA ADV",
+		"preco": 27871,
 		"tipo": "OHC, Monocilíndrico, 4 tempos, arrefecimento a líquido",
 		"cilindrada": "184,4 cc",
 		"potenciaMaxima": "17,1 cv a 8.500 rpm",
@@ -346,6 +361,7 @@
 	},
 	{
 		"nome": "CB 300F TWISTER ABS",
+		"preco": 28284,
 		"tipo": "DOHC, Monocilíndrico, 4 tempos, arrefecimento a líquido",
 		"cilindrada": "291,6 cc",
 		"potenciaMaxima": "29,8 cv a 8.000 rpm",
@@ -369,6 +385,7 @@
 	},
 	{
 		"nome": "XR 300L TORNADO",
+		"preco": 33255,
 		"tipo": "DOHC, Monocilíndrico, 4 tempos, arrefecimento a líquido",
 		"cilindrada": "291,6 cc",
 		"potenciaMaxima": "26,5 cv a 7.500 rpm",
@@ -392,6 +409,7 @@
 	},
 	{
 		"nome": "SAHARA 300",
+		"preco": 34136,
 		"tipo": "OHC, Monocilíndrico, 4 tempos, arrefecimento a ar",
 		"cilindrada": "286,4 cc",
 		"potenciaMaxima": "24,4 cv a 7.500 rpm",
@@ -415,6 +433,7 @@
 	},
 	{
 		"nome": "SAHARA 300 ADV",
+		"preco": 35281,
 		"tipo": "OHC, Monocilíndrico, 4 tempos, arrefecimento a ar",
 		"cilindrada": "286,4 cc",
 		"potenciaMaxima": "24,4 cv a 7.500 rpm",

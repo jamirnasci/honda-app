@@ -57,6 +57,10 @@ export function DetalhesMoto() {
                 </section>
 
                 <section className="details-info">
+                    <div>
+                        <h4 >Valor do Crédito</h4>
+                        <h2 className='fw-bold'>R$ {moto.preco.toLocaleString('pt-BR', {currency: 'BRL', minimumFractionDigits: 2})}</h2>
+                    </div>
                     <h2>Especificações Técnicas</h2>
                     <div className="specs-list">
                         <div className="spec-row"><span>Tipo</span><strong>{moto.tipo}</strong></div>
