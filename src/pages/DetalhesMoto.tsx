@@ -57,7 +57,7 @@ export function DetalhesMoto() {
                 </section>
 
                 <section className="details-info">
-                    <div>
+                    <div className=''>
                         <h4 >Valor do Crédito</h4>
                         <h2 className='fw-bold'>R$ {moto.preco.toLocaleString('pt-BR', {currency: 'BRL', minimumFractionDigits: 2})}</h2>
                     </div>
