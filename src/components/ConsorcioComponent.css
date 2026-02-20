@@ -1,7 +1,7 @@
 .consorcio-container{
     display: flex;
     flex-direction: column;
-    min-width: 350px;
+    min-width: 300px;
 }
 
 .consorcio-line{

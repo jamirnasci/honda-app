@@ -56,13 +56,14 @@ export function FinanciamentoForm({ moto }: { moto: IMoto }) {
 
     return (
         <div className="form-container">
-            <i style={{ display: 'inline-block', color: 'gray', paddingTop: '5px', paddingBottom: '10px' }}>
+            <i style={{ display: 'inline-block', color: 'gray', paddingTop: '5px', paddingBottom: '10px', fontSize: '12px' }}>
                 Preencha o formulário abaixo para que o vendedor possa trazer pra você as melhores cotações do mercado.
             </i>
-            <form className="form" onSubmit={handleSubmit}>
+            <form className="p-1" onSubmit={handleSubmit}>
                 <div className="form-group">
                     <label>Nome</label>
                     <input
+                        className="form-control"
                         type="text"
                         name="nome"
                         value={formData.nome}

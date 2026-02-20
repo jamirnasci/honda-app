@@ -125,7 +125,7 @@ Possui habilitação: ${dados.possuiHabilitacao}
                         <p className="text-muted">Consultor de Vendas</p>
                     </div>
 
-                    <form onSubmit={enviarFormulario}>
+                    <form className="form-cdc" onSubmit={enviarFormulario}>
 
                         <h2 className="text-center mb-4">Ficha CDC</h2>
 

@@ -1,12 +1,10 @@
-.form-container {
-  min-width: 350px;
-  max-width: 500px;
+.form-container{
+  width: 80vw;
 }
-
 .form {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 5px;
 }
 
 .form-group {
@@ -15,7 +13,6 @@
 }
 
 .form-group label {
-  margin-bottom: 6px;
   font-size: 14px;
   color: #555;
 }
@@ -27,12 +24,7 @@
   border: 1px solid #dcdcdc;
   font-size: 14px;
   transition: border 0.2s ease;
-}
-
-.form-group input:focus,
-.form-group select:focus {
-  outline: none;
-  border: 1px solid #4a90e2;
+  margin-bottom: 10px;
 }
 
 .submit-button {
