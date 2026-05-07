@@ -25,7 +25,7 @@ export function HomePage() {
     return (
         <>
             <div className="hero">
-                <img src="img/profile.jpg" alt="profile-photo" className="profile-img" />
+                <img src="img/profile.jpeg" alt="profile-photo" className="profile-img" />
             </div>
             <div className="profile-info">
                 <div>
